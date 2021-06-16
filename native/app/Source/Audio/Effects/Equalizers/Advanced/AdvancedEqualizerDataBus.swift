@@ -185,7 +185,7 @@ class AdvancedEqualizerDataBus: DataBus {
     }
   }
   
-  private func getGains (_ data: JSON?) throws -> AdvancedEqualizerPresetGains {
+  /* private func getGains (_ data: JSON?) throws -> AdvancedEqualizerPresetGains {
     if let gains = data["gains"] as? [String: Any] {
       if let bands = gains["bands"] as? [Double], let global = gains["global"] as? Double {
         let length = AdvancedEqualizer.frequencies.count
@@ -201,3 +201,4 @@ class AdvancedEqualizerDataBus: DataBus {
     throw "Invalid 'gains' parameter, must be a JSON with 'bands' Double Array and 'global' Double"
   }
 }
+*/
